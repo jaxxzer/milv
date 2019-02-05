@@ -1,0 +1,18 @@
+{
+    "version": "1.0.0",
+    "packages": ["cli", "lib"],
+    "command": {
+      "publish": {
+        "message": "Bump version to %s"
+      }
+    },
+    "changelog": {
+      "labels": {
+        "breaking": ":boom: Breaking Changes",
+        "enhancement": ":rocket: Enhancements",
+        "bug": ":bug: Bug Fixes",
+        "documentation": ":memo: Documentation"
+      }
+    },
+    "lerna": "3.10.5"
+  }

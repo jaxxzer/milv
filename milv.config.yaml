@@ -1,6 +1,0 @@
-white-list-external: ["localhost"]
-black-list: ["/vendor/", "test-markdowns"]
-files:
-  - path: "./README.md"
-    config:
-      allow-code-blocks: true

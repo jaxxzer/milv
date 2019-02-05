@@ -1,0 +1,59 @@
+{
+  "name": "milv",
+  "description": "The bot for markdown external and internal links validation",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "milv",
+    "bot",
+    "link-checker",
+    "typescript",
+    "sexy"
+  ],
+  "tags": [
+    "milv",
+    "bot",
+    "link-checker",
+    "typescript",
+    "sexy"
+  ],
+  "author": {
+    "name": "Maciej Urbańczyk",
+    "url": "https://github.com/magicmatatjahu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magicmatatjahu"
+  },
+  "main": "dist/src/index.js",
+  "bin": {
+    "milv": "dist/bin/milv.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "run": "ts-node ./bin/milv.ts",
+    "cleanup": "rm -rf ./dist",
+    "preversion": "npm run build",
+    "test": "jest --config ./test/jest-config.json -i",
+    "test:unit": "jest --config ./test/jest-config.json unit",
+    "test:integration": "jest --config ./test/jest-config.json integration",
+    "test:coverage": "jest --config ./test/jest-config.json --coverage",
+    "test:watch": "jest --config ./test/jest-config.json --watch --coverage"
+  },
+  "dependencies": {
+    "extend": "^3.0.2",
+    "js-yaml": "^3.12.1",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/core-js": "^2.5.0",
+    "@types/extend": "^3.0.0",
+    "@types/jest": "^23.3.12",
+    "@types/js-yaml": "^3.11.4",
+    "@types/node": "^10.12.18",
+    "core-js": "^2.6.2",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^7.0.1"
+  }
+}
